@@ -23,11 +23,16 @@
         $p3 -> setNome("Cláudio");
         $p4 -> setNome("Fabiana");
 
+        $p1 -> setSexo("M");
+        $p4 -> setSexo("F");
+
         $p2 -> setCurso("Informática");
         $p3 -> setSalario(2500.75);
         $p4 -> setSetor("Estoque");
 
-        
+        $p3 -> receberAumento(550.20);
+        $p4 -> mudarTrabalho();
+        $p2 -> cancelarMatr();
 
         print_r($p1);
         print_r($p2);
