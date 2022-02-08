@@ -11,13 +11,36 @@
         require_once 'Reptil.php';
         require_once 'Peixe.php';
         require_once 'Ave.php';
+        require_once 'Canguru.php';
+        require_once 'Cachorro.php';
+        require_once 'Cobra.php';
+        require_once 'Tartaruga.php';
+        require_once 'Goldfish.php';
+        require_once 'Arara.php';
 
         $m = new Mamifero();
         $a = new Ave();
+        $r = new Reptil();
+        $c = new Canguru();
+        $k = new Cachorro();
+        $t = new Tartaruga();
+        $cc = new Cobra();
 
-        $m -> setPeso(33.5);
-        $m -> locomover();
-        $a -> locomover();
+        echo "<p>Cachorro</p>";
+        $k -> emitirSom();
+        $k -> locomover();
+        $k -> alimentar();
+        echo "</br>";
+        echo "<p>Cobra</p>";
+        $cc -> emitirSom();
+        $cc -> locomover();
+        $cc -> alimentar();
+        echo "</br>";
+        echo "<p>Canguru</p>";
+        $c -> emitirSom();
+        $c -> locomover();
+        $c -> alimentar();
+        echo "</br>";
         ?>
     </body>
 </html>

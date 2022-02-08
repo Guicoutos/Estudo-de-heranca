@@ -4,7 +4,7 @@ class Mamifero extends Animal {
     private $corPelo;
 
     public function alimentar() {
-        echo "<p>Mamando</p>";
+        echo "<p>O animal é um mamífero, portanto, mama</p>";
     }
 
     public function emitirSom() {
